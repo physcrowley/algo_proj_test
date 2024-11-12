@@ -50,7 +50,7 @@ Exemple 3
 
 Tests à réussir :
 
-- dossier `test_subfolderA` ->  `"test_subfolderA(a(b(\"xx.txt\",\"yy.txt\",),"x.txt",),c(\"z.txt\",\"zzz.txt\",),),"`
+- dossier `test_subfolderA` ->  `"test_subfolderA(a(b(\"xx.txt\",\"yy.txt\",),\"x.txt\",),c(\"z.txt\",\"zzz.txt\",),),"`
 
 - dossier `test_subfolderB` -> `"test_subfolderB(.vscode(\"settings.json\",),bin(edu(ics4u(algos(\"App.class\",),),),),lib(\"hamcrest-core-1.3.jar\",\"junit-4.13.2.jar\",),src(edu(ics4u(algos(\"App.java\",),),),),\"README.md\",),"`
 
