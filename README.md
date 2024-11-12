@@ -11,7 +11,7 @@ Le fichier `Driver.java` est une coquille incluant les signatures pour les méth
 
 ### Défi 1 - structure de fichier valide
 
-Créer un algorithme pour déterminer si la structure d'un fichier texte nommé `/test_data/*.qz` est valide pour les quiz fait comme démonstration en début de semestre (voir la [section 2024 des démonstrations de la page de revue](https://physcrowley.github.io/ICS4U/u1-Revue.html#dmonstrations)). La méthode devrait prendre un objet `File` associé au chemin du fichier en paramètre.
+Créer un algorithme pour déterminer si la structure d'un fichier texte nommé `./test_data/*.qz` est valide pour les quiz fait comme démonstration en début de semestre (voir la [section 2024 des démonstrations de la page de revue](https://physcrowley.github.io/ICS4U/u1-Revue.html#dmonstrations)). La méthode devrait prendre un objet `File` associé au chemin du fichier en paramètre.
 
 Les test à passer sont pour :
 
