@@ -15,14 +15,14 @@ Créer un algorithme pour déterminer si la structure d'un fichier texte nommé 
 
 Les test à passer sont pour :
 
-- un fichier vide -> `false`
-- un fichier qui contient la quantité initiale de <= 0 -> `false`
-- un fichier valide -> `true`
-- un indexe invalide -> `false`
-- manque la ligne d'options -> `false`
-- l'index n'est pas un nombre -> `false`
-- l'ordre des lignes d'informations pour une question n'est pas régulier -> `false`
-- le nombre de questions est inférieure à la quantité initiale -> `false`
+- un fichier vide (`empty.qz`) -> `false`
+- un fichier qui contient la quantité initiale de <= 0 (`zero.qz`) -> `false`
+- manque la ligne d'options (`missing_options.qz`) -> `false`
+- l'ordre des lignes d'informations pour une question n'est pas régulier (`wrong_order.qz`) -> `false`
+- l'index n'est pas un nombre (`not_a_number.qz`) -> `false`
+- un indexe invalide (`bad_index.qz`) -> `false`
+- le nombre de questions est inférieure à la quantité initiale (`wrong_number.qz`) -> `false`
+- un fichier valide (`valid.qz`) -> `true`
 
 > **Pistes de démarrage**
 > 
