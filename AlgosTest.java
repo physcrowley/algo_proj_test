@@ -5,15 +5,15 @@ import org.junit.Test;
 import java.util.*;
 import java.io.*;
 
-public class DriverTest {
+public class AlgosTest {
 
     /** Objet qui contient les méthodes à tester */
-    Driver testClass;
+    Algos testClass;
 
     @Test
-    public void testIsValidQuizDataFile() {
+    public void testWillNotCrashLoadData() {
 
-        testClass = new Driver();
+        testClass = new Algos(); // nouvelle instance pour le test
 
         /*
          * Enlever les commentaires pour ajouter les cas de tests.
@@ -22,6 +22,7 @@ public class DriverTest {
          * structure valide de fichier pour un quiz.
          * 
          * Le premier test, pour un fichier vide, est actif (décommenté).
+         * 
          */
         HashMap<String, Boolean> expected = new HashMap<>();
         expected.put("empty.qz", false);
@@ -41,7 +42,7 @@ public class DriverTest {
         for (File f : files) {
             String fileName = f.getName();
             String msg = "Test pour " + fileName + " : échoué";
-            assertEquals(msg, expected.get(fileName), testClass.isValidQuizDataFile(f));
+            assertEquals(msg, expected.get(fileName), testClass.willNotCrashLoadData(f));
         }
 
     }
@@ -49,21 +50,9 @@ public class DriverTest {
     @Test
     public void testFileStructure() {
 
-        testClass = new Driver();
+        testClass = new Algos(); // nouvelle instance pour le test
 
-        // cas de test
-
-        String structureA = "./test_subfolderA";
-        String structureB = "./test_subfolderB";
-
-        HashMap<String, String> expected = new HashMap<>();
-        expected.put(
-                structureA,
-                "test_subfolderA(a(b(\"xx.txt\",\"yy.txt\",),\"x.txt\",),c(\"z.txt\",\"zzz.txt\",),),");
-        expected.put(
-                structureB,
-                "test_subfolderB(.vscode(\"settings.json\",),bin(edu(ics4u(algos(\"App.classy\",),),),),lib(\"hamcrest-core-1.3.jar\",\"junit-4.13.2.jar\",),\"README.md\",src(edu(ics4u(algos(\"App.coffee\",),),),),),");
-
+       
         // tests
         for (String root : new String[] { structureA, structureB }) {
             File rootFile = new File(root);
@@ -75,7 +64,7 @@ public class DriverTest {
     @Test
     public void testPrettyFileStructure() {
 
-        testClass = new Driver();
+        testClass = new Algos(); // nouvelle instance pour le test
 
         // cas de test
 
