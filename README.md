@@ -7,11 +7,13 @@
 
 Vous devez trouvez une solution en groupes de 2 ou 3 personnes pour les deux premiers défis suivants. Si vous trouvez une solution valide pour le deuxième, vous devrez également tenter le troisième.
 
-Le fichier `Driver.java` est une coquille incluant les signatures pour les méthodes à développer.
+- Le fichier `Algos.java` est une coquille incluant les signatures pour les méthodes à développer.
+- Le fichier `AlgosTest.java` inclut des tests unitaires JUnit pour valider vos algorithmes.
+- Le fichier `Driver.java` vous permet de tester manuellement les algorithmes avec le débogueur s'ils échouent le test unitaire.
 
 ### Défi 1 - structure de fichier valide
 
-Créer un algorithme pour déterminer si la structure d'un fichier texte nommé `./test_data/*.qz` est valide pour les quiz fait comme démonstration en début de semestre (voir la [section 2024 des démonstrations de la page de revue](https://physcrowley.github.io/ICS4U/u1-Revue.html#dmonstrations)). La méthode devrait prendre un objet `File` associé au chemin du fichier en paramètre.
+Créer un algorithme pour déterminer si la structure d'un fichier texte nommé `./test_data/*.qz` est valide pour les quiz fait comme démonstration en début de semestre (voir la [section 2024 des démonstrations de la page de revue](https://physcrowley.github.io/ICS4U/u1-Revue.html#dmonstrations)), notamment la méthode `loadData`. Votre algorithme devrait prendre un objet `File` associé au chemin du fichier en paramètre.
 
 Les test à passer sont pour :
 
@@ -26,7 +28,7 @@ Les test à passer sont pour :
 
 > **Pistes de démarrage**
 > 
-> - Vous pouvez utiliser le code fourni dans la démonstration comme base pour la lecture du fichier. Votre travail consistera à changer la > façon que le fichier est lu afin de valider sa structure.
+> - Vous pouvez utiliser le code fourni dans la démonstration comme base pour la lecture du fichier. Votre travail consistera à changer la façon que le fichier est lu afin de valider sa structure.
 > - Il y a une version de l'algorithme pour trouver les fichiers qui utilise l'objet `File`, soit `chooseSourceV2()`. Cette version inclut quelques techniques de base sur l'utilisation de l'objet `File`, bien que la logique ne s'applique globale (objectif différent) ne s'applique pas à ce défi spécifique.
 
 ### Défi 2 - structure de dossier
