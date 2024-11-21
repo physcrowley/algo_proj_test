@@ -52,6 +52,17 @@ public class AlgosTest {
 
         testClass = new Algos(); // nouvelle instance pour le test
 
+        // cas de test
+        String structureA = "./test_subfolderA";
+        String structureB = "./test_subfolderB";
+
+        HashMap<String, String> expected = new HashMap<>();
+        expected.put(
+                structureA,
+                "test_subfolderA(a(b(\"xx.txt\",\"yy.txt\",),\"x.txt\",),c(\"z.txt\",\"zzz.txt\",),),");
+        expected.put(
+                structureB,
+                "test_subfolderB(.vscode(\"settings.json\",),bin(edu(ics4u(algos(\"App.class\",),),),),lib(\"hamcrest-core-1.3.jar\",\"junit-4.13.2.jar\",),src(edu(ics4u(algos(\"App.java\",),),),),\"README.md\",),");
        
         // tests
         for (String root : new String[] { structureA, structureB }) {
@@ -67,7 +78,6 @@ public class AlgosTest {
         testClass = new Algos(); // nouvelle instance pour le test
 
         // cas de test
-
         HashMap<String, String> expected = new HashMap<>();
 
         expected.put(
